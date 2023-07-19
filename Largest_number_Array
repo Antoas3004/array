@@ -1,0 +1,16 @@
+public class Largest_number {
+
+	public static void main(String[] args) {
+		// given Array
+		int a[] = { 75, 109, 108, 7, 1000 };
+		// Assign a value any in max
+		int max = a[0];
+
+		for (int i = 0; i < a.length; i++) {
+			if (max < a[i]) {
+				max = a[i];
+			}
+		}
+		System.out.println("largest number in an array = " + max);
+	}
+}
