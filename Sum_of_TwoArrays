@@ -1,0 +1,54 @@
+public class public class Sum_of_TwoArrays {
+
+	public static void main(String[] args) {
+		int a[] = { 01, 92, 83, 74, 65 };
+		int b[] = { 10, 29, 38, 47, 56 };
+
+		int sumofaarray = 0;
+		int sumofbarray = 0;
+		int sumofbotharray = 0;
+
+		// sum of a array
+		for (int i = 0; i < a.length; i++) {
+			sumofaarray = sumofaarray + a[i];
+		}
+		System.out.println("sum of a array = " + sumofaarray);
+
+		// sum of b array
+		for (int j = 0; j < b.length; j++) {
+			sumofbarray = sumofbarray + b[j];
+		}
+		System.out.println("sum of b array = " + sumofbarray);
+
+		// sum of both array
+		sumofbotharray = sumofaarray + sumofbarray;
+		System.out.println("sum of both array = " + sumofbotharray);
+	}
+}
+ 
+
+	public static void main(String[] args) {
+		int a[] = { 01, 92, 83, 74, 65 };
+		int b[] = { 10, 29, 38, 47, 56 };
+
+		int sumofaarray = 0;
+		int sumofbarray = 0;
+		int sumofbotharray = 0;
+
+		// sum of a array
+		for (int i = 0; i < a.length; i++) {
+			sumofaarray = sumofaarray + a[i];
+		}
+		System.out.println("sum of a array = " + sumofaarray);
+
+		// sum of b array
+		for (int j = 0; j < b.length; j++) {
+			sumofbarray = sumofbarray + b[j];
+		}
+		System.out.println("sum of b array = " + sumofbarray);
+
+		// sum of both array
+		sumofbotharray = sumofaarray + sumofbarray;
+		System.out.println("sum of both array = " + sumofbotharray);
+	}
+}
