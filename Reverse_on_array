@@ -1,0 +1,16 @@
+public class Reverse_on_array {
+
+	public static void main(String[] args) {
+		// orinal given array
+		int a[] = { 5, 6, 7, 8, 9, 4, 3, 2, 1 };
+
+		// loop for reverse
+
+		for (int i = a.length - 1; i >= 0; --i) {
+
+			// printing reverse
+
+			System.out.println(a[i]);
+		}
+	}
+}
