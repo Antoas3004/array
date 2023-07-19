@@ -1,0 +1,51 @@
+public class public class Sum_of_Array_index_wise {
+
+	public static void main(String[] args) {
+
+		// find a sum array index wise
+
+		int a[] = { 1, 2, 3, 4, 5, 6 };
+		int b[] = { 3, 2, 5, 4, 5, 6, };
+		int c[] = new int[a.length];
+
+		if (a.length == b.length) {
+			// for loop for a array
+			for (int i = 0; i < a.length; i++) {
+				// loop for b array
+				for (int j = 0; j < b.length; j++) {
+					if (a[i] == a[j]) {
+						c[i] = a[i] + b[j];
+						System.out.print(c[i] + ",");
+					}
+				}
+			}
+		} else {
+			System.out.println("Given two array length is not same");
+		}
+	}
+ 
+
+	public static void main(String[] args) {
+
+		// find a sum array index wise
+
+		int a[] = { 1, 2, 3, 4, 5, 6 };
+		int b[] = { 3, 2, 5, 4, 5, 6, };
+		int c[] = new int[a.length];
+
+		if (a.length == b.length) {
+			// for loop for a array
+			for (int i = 0; i < a.length; i++) {
+				// loop for b array
+				for (int j = 0; j < b.length; j++) {
+					if (a[i] == a[j]) {
+						c[i] = a[i] + b[j];
+						System.out.print(c[i] + ",");
+					}
+				}
+			}
+		} else {
+			System.out.println("Given two array length is not same");
+		}
+	}
+}
