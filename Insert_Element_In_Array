@@ -1,0 +1,37 @@
+public class Insert_Element_In_Array {
+
+	public static void main(String[] args) {
+		// given array
+		int location = 3;
+		int location1=2;
+		int value = 4;
+		int value1=3;
+		int a[] = { 1, 2, 3, 5, 6 };
+
+		// create new array to insert new element one index higher the given array
+		int b[] = new int[7];
+
+		// stored a array in b new array now we get one empty index
+		for (int i = 0; i < a.length; i++) {
+			b[i] = a[i];
+		}
+		System.out.println("Atrer Storing new Array b:");
+		for (int c : b) {
+			System.out.print(c + ",");
+		}
+		// swap the element
+		for (int i = b.length - 1; i > location; --i) {
+			b[i] = b[i - 1];
+		}
+		b[location] = value;
+		for (int i = b.length - 1; i > location1; --i) {
+			b[i] = b[i - 1];
+		}
+		b[location1]=value1;
+		System.out.println();
+		System.out.println("after insert element in location:");
+		for (int d : b) {
+			System.out.print(d + ",");
+		}
+	}
+}
