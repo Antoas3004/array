@@ -1,0 +1,22 @@
+public class Sumof_OddEven_Numbers {
+
+	public static void main(String[] args) {
+
+		int sumofodd = 0;
+		int sumofeven = 0;
+
+		int a[] = { 1, 2, 3, 4, 5, 6, 7 };
+
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 == 0) {
+				sumofeven = sumofeven + a[i];
+			}
+			if (a[i] % 2 == 1) {
+				sumofodd = sumofodd + a[i];
+			}
+		}
+		System.out.println("sum of odd number : " + sumofodd);
+		System.out.println("sum of even number : " + sumofeven);
+	}
+}
+
