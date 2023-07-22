@@ -1,0 +1,46 @@
+public class Put_AddEven_SeperateArray {
+
+	public static void main(String[] args) {
+		int oddcount = 0;
+		int evencount = 0;
+		int a[] = { 3, 2, 3, 4, 5, 7, 7, 3, 9, 10 };
+		// frist find add and even number count
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 == 1) {
+				oddcount++;
+			}
+			if (a[i] % 2 == 0) {
+				evencount++;
+			}
+		}
+		System.out.println("number of odd number : " + oddcount);
+		System.out.println("number of even number : " + evencount);
+
+		// now we now how many add and even element present in this array
+		// so now we create two new array to store odd and even number in
+		// seperate array
+		int odd[] = new int[oddcount];
+		int even[] = new int[evencount];
+		int evennum = 0;
+		int oddnum = 0;
+
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 == 0) {
+				even[evennum] = a[i];
+				evennum++;
+			}
+			if (a[i] % 2 == 1) {
+				odd[oddnum] = a[i];
+				oddnum++;
+			}
+		}
+		System.out.println("even number array : ");
+		for (int x : even) {
+			System.out.println(x);
+		}
+		System.out.println("odd number array : ");
+		for (int y : odd) {
+			System.out.println(y);
+		}
+	}
+}
